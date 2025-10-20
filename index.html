@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Order Summary</h1>
+        <div class="order-details">
+            <div class="detail-row">
+                <span>Item:</span>
+                <span>Test Product</span>
+            </div>
+            <div class="detail-row">
+                <span>Transaction Note:</span>
+                <span id="txn-note">TestOrder123</span>
+            </div>
+            <hr>
+            <div class="detail-row total">
+                <span>Amount:</span>
+                <span>₹1.00</span>
+            </div>
+        </div>
+        
+        <button id="pay-button">Pay ₹1.00 via UPI</button>
+        
+        <div id="payment-status" class="status-message hidden">
+            <p>Waiting for payment...</p>
+            <p>Once paid, the status will update (this is the part requiring a backend).</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
